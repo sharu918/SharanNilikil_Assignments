@@ -4,8 +4,8 @@ public class Arthimetic
 {
 	public static void main(String[] args) 
 	{
-		arthimetic_operations add = (int a, int b) -> System.out.println(a + b);
-		arthimetic_operations sub = (int a, int b) -> System.out.println(a - b);
+		arthimetic_operations add = (a, b) -> System.out.println(a + b);
+		arthimetic_operations sub = (a, b) -> System.out.println(a - b);
 		arthimetic_operations multiply = (int a, int b) -> System.out.println(a * b);
 		arthimetic_operations divide = (int a, int b) -> 
 		{
