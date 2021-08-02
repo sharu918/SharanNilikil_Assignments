@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ 	xmlns:context="http://www.springframework.org/schema/context"
+ 	xmlns:p="http://www.springframework.org/schema/p"
+ 	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	 http://www.springframework.org/schema/beans/spring-beans.xsd
+	 http://www.springframework.org/schema/context
+	 http://www.springframework.org/schema/context/spring-context.xsd">
+	 
+	 <bean name = "q1" class = "assignment02.SpringCore.QuestionList">
+	 	<property name="QuestionId" value="123" />
+	 	<property name="Question" value="Your Certificates?" />
+	 	<property name="Answer">
+	 		<list>
+	 			<value>Cyber Security</value>
+	 			<value>PEGA</value>
+	 			<value>C</value>
+	 		</list>
+	 	</property>
+	 </bean>
+	 
+	 <bean name = "q2" class = "assignment02.SpringCore.QuestionMap">
+	 	<property name="QuestionId" value="456" />
+	 	<property name="Question" value="Hobbies?" />
+	 	<property name="Answer1">
+	 		<map>
+	 			<entry value="Playing Cricket" key="1"/>
+	 			<entry value="Playing Badminton" key="2"/>
+	 			<entry value="Playing Quitar" key="3"/>
+	 		</map>
+	 	</property>
+	 </bean>
+	 
+	 <bean name = "q3" class = "assignment02.SpringCore.QuestionSet">
+	 	<property name="QuestionId" value="456" />
+	 	<property name="Question" value="Your pets names" />
+	 	<property name="Answer">
+	 		<set>
+	 			<value>Bruno</value>
+	 			<value>Husky</value>
+	 			<value>Tyson</value>
+	 		</set>
+	 	</property>
+	 </bean>
+</beans>

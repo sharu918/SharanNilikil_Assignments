@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ 	xmlns:context="http://www.springframework.org/schema/context"
+ 	xmlns:p="http://www.springframework.org/schema/p"
+ 	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	 http://www.springframework.org/schema/beans/spring-beans.xsd
+	 http://www.springframework.org/schema/context
+	 http://www.springframework.org/schema/context/spring-context.xsd">
+	 
+	 <bean class = "assignment01.SpringCore.Address" name = "aref">
+	 <property name = "Street">
+	 		<value>Ashok Nagar</value>
+	 	</property>
+	 	
+	 	<property name = "State" >
+	 		<value>AP</value>
+	 	</property>
+	 	
+	 	<property name = "City" >
+	 		<value>Vijayawada</value>
+	 	</property>
+	 	
+	 	<property name = "Zip" >
+	 		<value>520010</value>
+	 	</property>
+	 	
+	 	<property name = "Country" >
+	 		<value>India</value>
+	 	</property>
+	 	
+	 </bean>
+	 
+	 <bean class = "assignment01.SpringCore.Customer" name = "cref">
+	 	<property name = "CustomerId" value = "548" />
+	 	<property name = "CustomerName" value = "Sharan" />
+	 	<property name = "CustomerContact" value = "87459" />
+	 	<property name = "ob" ref = "aref" />
+	 </bean>
+	
+</beans>
