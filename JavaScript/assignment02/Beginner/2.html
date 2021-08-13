@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>compose</title>
+    </head>
+    <body>
+        <script>
+            const compose = (a,b) => x => { return a(b(x));}; 
+            const double = x => x * 2;
+            const square = x => x * x;
+
+            // function composition
+            var ComposedValue= compose(square, double);
+            
+            var ComposedValue1= compose(double, square);
+           
+            console.log( ComposedValue(5));
+            console.log( ComposedValue1(5));
+            console.log( ComposedValue(10));
+            console.log( ComposedValue1(10));
+        </script>
+    </body>
+</html>

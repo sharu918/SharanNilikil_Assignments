@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Recursive version of find</title>
+    </head>
+    <body>
+        <script>
+            var arr=[1,2,3,4,5];
+            function isEven(a)
+            {
+                if(a%2===0) return true;
+                else return false;
+            }
+            var i=0;
+            function findFirstEven(arr,fn)
+            {
+                let ans=arr.shift();
+                    if(fn(ans))
+                    {
+                        return ans;
+                    }
+                    else{
+                        findFirstEven(arr,fn);
+                    }
+                    
+                }
+            console.log(findFirstEven(arr,isEven));
+        </script>
+    </body>
+</html>

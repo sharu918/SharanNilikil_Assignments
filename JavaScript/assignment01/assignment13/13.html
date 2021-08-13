@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Functions</title>
+    </head>
+    <body>
+        <script>
+    
+            var arr=[11,34,67,89,90];
+            var sum=0;
+            var l=arr.length;
+            var i=0;
+            for(i;i<arr.length;i++){
+                 sum = sum+arr[i];
+                
+            }
+            console.log("Sum of array using for loop "+sum);
+    
+            i=0;
+            sum=0;
+            l=arr.length;
+            while(l--){
+                
+                 sum=sum+arr[i];
+                 i++;
+             
+            }
+            console.log("Sum of array using while loop "+sum);
+    
+            i=0;
+            sum=0;
+            l=arr.length-1;
+            do{
+                sum=sum+arr[i];
+                i++;
+             
+            }while(l--);
+            console.log("Sum of array using do while loop "+sum);
+        </script>
+        
+    </body>
+</html>

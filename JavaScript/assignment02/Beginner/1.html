@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>composedValue</title>
+    </head>
+    <body>
+        <script>
+            const compose = (...fns) => x => fns.reduceRight((y, f) => f(y), x); 
+            const double = x => x * 2
+            const square = x => x * x
+    
+            // function composition
+            var output_final = compose(square, double)(5);
+            console.log(output_final);
+        </script>
+    </body>
+</html>

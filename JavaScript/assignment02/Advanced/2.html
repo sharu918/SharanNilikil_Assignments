@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Recursive version of map</title>
+    </head>
+    <body>
+        <script>
+            function square(a){
+            return a*a;
+            }
+            var output=[];
+            function map1(arr,logic)
+            {    
+                if(arr.length>0)
+                {     
+                    let first=arr.shift();
+                    output.push(logic(first));
+                    map1(arr,logic);
+                }
+                return output;
+            }
+            console.log(map1([1,4,9,16,25],Math.sqrt)) ;
+        </script>
+    </body>
+</html>
