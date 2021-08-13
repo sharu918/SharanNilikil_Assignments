@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Form</title>
+    </head>
+    <body bgcolor="lightblue">
+        <form id="survey" action="Feedback.html">
+            <h1 style="text-align: center;">Survey Form</h1>
+            <p><strong>NOTE: </strong>Please fill this form after your exam.</p>
+            <fieldset>
+                <legend>Personal Details:</legend>
+                <div>
+                    <label id="name-label" for="name">Name:</label>
+                    <input type="text" id="name" name="user_name" placeholder="Enter name here" required>   
+                </div><br><br>
+                <div>
+                    <label id="email-label" for="Email">Email:</label>
+                    <input type="email" id="email" name="user_email" placeholder="Enter email here" required>
+                </div><br><br>
+                <div>
+                    <label id="number-label" for="phone">Phone Number:</label>
+                    <input type="number" id="number" name="user_name" placeholder="Enter 10 digit number">  
+                </div><br><br>
+                <div>
+                    <p>Gender:</p>
+                    <input type="radio" id="Gender" name="gender" value="Male">
+                    <label for="Gender">Male</label><br>
+                    <input type="radio" id="Gender" name="gender" value="Female">
+                    <label for="Gender">Female</label><br> 
+                </div><br><br>
+                <div>
+                    <label for="birth">Date of Birth:</label>
+                    <input  id="birth" type="Date"> </div><br><br>
+                </div><br><br>
+                <div>
+                    <input type="submit" value="Submit">
+                </div>
+
+            </fieldset>
+        </form>
+    </body>
+</html>
