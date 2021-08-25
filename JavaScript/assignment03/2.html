@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Q2</title>
+    </head>
+    <body>
+        <script>
+            class Rectangle 
+            {
+                constructor(height, width) 
+                {
+                    this.height = height;
+                    this.width = width;
+                }
+            }
+            let r = new Rectangle(20,25);
+            console.log("height of  first rectangle is:",r.height);
+            console.log("width of  first rectangle is:",r.width);
+        
+            // Added the method getarea in class using protoptype:
+            console.log(typeof(rectangle));
+            Rectangle.prototype.getArea=function()
+            {
+                return this.height*this.width;
+            }
+            console.log("Area of a rectangle is :",r.getArea());
+        </script>
+    </body>
+</html>

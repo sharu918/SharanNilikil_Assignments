@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Q1</title>
+    </head>
+    <body>
+        <script>
+            function Person(fname,lname,age,skill,dob,address,married,profation){
+                    this.fname=fname;
+                    this.lname=lname;
+                    this.age=age;
+                    this.skill=skill;
+                    this.dob=dob;
+                    this.address=address;
+                    this.married=married;
+                    this.profation=profation;
+            }
+            let p1=new Person("Sharan","N",21,"developer","09-02-2000",{city:"Vijayawada",pincode:"520010"},false,"engineer");
+            let p2=new Person("Swetha","N",21,"coder","18-09-1999",{city:"Vijayawada",pincode:"520010"},false,"engineer");
+            print=function()
+            {
+                console.log(p1);
+                console.log(p2);
+            }();
+        </script>
+    </body>
+</html>
